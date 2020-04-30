@@ -4,6 +4,6 @@ This program takes an x86 and x64 bin files as arguments, converts them them to 
 
 By default, outputs to 'output.csv'
 
-#Example
+# Example
 
 excel4macro.py x86payload.bin x64payload.bin
