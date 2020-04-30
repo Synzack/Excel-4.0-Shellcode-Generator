@@ -6,4 +6,4 @@ By default, outputs to 'output.csv'
 
 # Example
 
-excel4macro.py x86payload.bin x64payload.bin
+python excel4macro.py x86payload.bin x64payload.bin
