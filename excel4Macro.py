@@ -36,7 +36,6 @@ def generateShellcode(binfile, arch):
             i +=1
                     
             if i == 20:
-                excelShellcode+=('\n=')
                 if arch == 'x86':
                     shellcode86.append(excelShellcode)
                     excelShellcode = '='
