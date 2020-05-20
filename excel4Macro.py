@@ -31,10 +31,9 @@ def generateShellcode(binfile, arch):
         while byte != b'':
             hexByte= str(bytes2int(byte))
             excelShellcode += f'CHAR({hexByte})'
-            
             byte = sfile.read(1)
             i +=1
-                    
+            
             if i == 20:
                 if arch == 'x86':
                     shellcode86.append(excelShellcode)
@@ -45,7 +44,14 @@ def generateShellcode(binfile, arch):
                 i = 0
             else:
                 excelShellcode+=('&')
-    
+
+        #Append last line
+        if arch == 'x64':
+            shellcode64.append(excelShellcode[:-1])
+
+        elif arch == 'x86':
+            shellcode86.append(excelShellcode[:-1])
+
 #Generate shellcode lists
 generateShellcode(bin86, 'x86')
 generateShellcode(bin64, 'x64')
