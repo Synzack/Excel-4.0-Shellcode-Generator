@@ -4,7 +4,7 @@ This program takes x86 and x64 shellcode bin files as arguments, converts them t
 
 If the formula finds Excel is running in a 32 bit process, the x86 shellcode will be executed. Likewise, if Excel is found to be running in a 64 bit process, the x64 shellcode will be executed.
 
-I could not find a good way to create the 4.0 macro sheet from python, so I have the output to a CSV file instead. You can manually run the macro code from within Excel as a CSV, or if you would like a macro-enabled document, copy and paste the contents to a new XLS/XLSM document in an excel 4.0 macro sheet.
+I could not find a good way to create the 4.0 macro sheet from python, so I have the output to a CSV file instead. You can manually run the macro code from within Excel as a CSV, or if you would like a macro-enabled document, copy and paste the contents to a new XLS/XLSM document in an Excel 4.0 macro sheet.
 
 By default, outputs to 'output.csv'
 
