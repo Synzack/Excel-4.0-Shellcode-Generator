@@ -1,6 +1,6 @@
 # Excel 4.0 Shellcode Macro Generator
 
-This program takes x86 and x64 shellcode bin files as arguments, converts them them to Excel CHAR shellcode, and adds formulas necessary to inject and execute into memory.
+This program takes x86 and x64 shellcode bin files as arguments, converts them them to Excel CHAR shellcode, and adds formulas necessary to inject and execute into memory. (Be sure the bin files have been modified in a way that exclude null bytes).
 
 If the formula finds Excel is running in a 32 bit process, the x86 shellcode will be executed. Likewise, if Excel is found to be running in a 64 bit process, the x64 shellcode will be executed.
 
